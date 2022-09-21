@@ -1,0 +1,197 @@
+/*reset*/
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/*body*/
+
+body{
+    background-color: #E94560;
+}
+
+/*Header*/
+
+.menu{
+    background-color: #16213E;
+    list-style: none;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.marca{
+    text-align: Center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #E94560;
+}
+
+
+
+.links-menu{
+    list-style: none;
+    color: #E94560;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background-color: #0F3460;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/*Main Gran Lector*/
+
+.nosotros{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.img-nosotros{
+    position: relative;
+    left: 900px;
+    max-height: 250px;
+    max-width: 160px;
+    border-radius: 10px;
+}
+
+.eventos{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.img-eventos{
+    position: relative;
+    left: 900px;
+    max-height: 250px;
+    max-width: 160px;
+    border-radius: 100px;
+}
+
+p{
+    display: inherit;
+    overflow: auto;
+}
+
+/*Main Manwhas*/
+
+.manwha{
+    margin-top: 30px;
+    margin-bottom: 30px;  
+}
+
+.blue-lock{
+    position: relative;
+    max-height: 220px;
+    max-width: 140px;
+}
+
+.kaiju{
+    position: relative;
+    max-height: 220px;
+    max-width: 140px;    
+}
+
+/*main audiolibros*/
+
+.audio-libro{
+    margin-top: 30px;
+    margin-bottom: 30px;  
+}
+
+.omni{
+    position: relative;
+    max-height: 280px;
+    max-width: 190px;
+    
+}
+
+.regressor{
+    position: relative;
+    max-height: 280px;
+    max-width: 190px;
+}
+
+/*Main dudas*/
+
+.staff{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;  
+}
+
+.staff div img{
+    position: relative;
+    display: inline-block;
+    max-height: 250px;
+    max-width: 160px;
+    border-radius: 100px ;
+}
+
+/*section dudas*/
+
+.dudas-frecuentes{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}    
+.mas-dudas{
+    margin-top: 30px;
+    margin-bottom: 30px;
+} 
+
+.mas-dudas img{
+    position: relative;
+    max-height: 250px;
+    max-width: 160px;
+}
+
+
+/*Main Register*/
+
+.registrar{
+    text-align: center;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.registrar form fieldset{
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    padding: 100px;
+    margin: 60px 30px 30px 60px;
+}
+
+.registrar form fieldset div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*footer*/
+footer{
+    align-items: end;
+}
+.redes-sociales{
+    background-color: #16213E;
+    list-style: none;
+} 
+
+.derechos{
+    color: #E94560;
+}
+
+.links-redes{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+.logos-sociales{
+    position: relative;
+    align-content: right;
+    max-height: 30px;
+    max-width: 30px;
+    left: 1150px;
+}
