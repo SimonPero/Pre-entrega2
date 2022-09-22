@@ -6,39 +6,96 @@
     box-sizing: border-box;
 }
 
-/*body*/
 
-body{
-    background-color: #E94560;
+/*grid*/
+.contenedor{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "section section"
+    "footer footer";
 }
 
-/*Header*/
-
-.menu{
-    background-color: #16213E;
-    list-style: none;
-    position: sticky;
-    top: 0;
-    z-index: 2;
+.contenedor{
+    min-height: 100vh;
 }
+/*header*/
+.contenedor header{
+    grid-area: header;
+    width: 100%;
+}
+    
+
 .marca{
     text-align: Center;
     font-size: 40px;
     font-weight: bold;
     color: #E94560;
 }
+.fondo-color{
+    background-color: #16213E;
+}
+/*main*/
+.contenedor main{
+    grid-area: main;
+}
+.nosotros{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
+.img-nosotros{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 
+}
+/*section*/
+.contenedor section{
+    grid-area: section;
+}
+/*footer*/
+.contenedor footer{
+    grid-area: footer;
+    margin-top: auto;
+}
 
-.links-menu{
-    list-style: none;
+.logos-sociales img:last-child{
+    max-width: 4.54vh;
+    max-height: 4.54vh;
+}
+/*body*/
+
+body{
+    background-color: #E94560;
+    
+    
+}
+
+/* anuncios*/
+
+.anuncio-dos{
+    display: none;
+}
+.anuncio-uno{
+    display: none;
+}
+
+/*Header*/
+
+.logo-granlector{
+    display: none;
+}
+
+.marca{
+    text-align: Center;
+    font-size: 40px;
+    font-weight: bold;
     color: #E94560;
-    display: inline-block;
-    margin: 10px;
-    padding: 10px;
-    background-color: #0F3460;
-    border-radius: 10px;
-    text-decoration: none;
 }
 
 /*Main Gran Lector*/
@@ -49,69 +106,35 @@ body{
 }
 
 .img-nosotros{
-    position: relative;
-    left: 900px;
-    max-height: 250px;
-    max-width: 160px;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: fle-end;
 }
-
-.eventos{
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.img-eventos{
-    position: relative;
-    left: 900px;
-    max-height: 250px;
-    max-width: 160px;
+.img-nosotros img{
     border-radius: 100px;
 }
 
-p{
-    display: inherit;
-    overflow: auto;
+.eventos{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
-/*Main Manwhas*/
-
-.manwha{
-    margin-top: 30px;
-    margin-bottom: 30px;  
+.img-eventos{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.img-eventos img{
+    border-radius: 100px;
 }
 
-.blue-lock{
-    position: relative;
-    max-height: 220px;
-    max-width: 140px;
+/*tamaño de imagenes en card de manwha*/
+
+
+.manwha img{
+    max-height: 80%;
 }
 
-.kaiju{
-    position: relative;
-    max-height: 220px;
-    max-width: 140px;    
-}
-
-/*main audiolibros*/
-
-.audio-libro{
-    margin-top: 30px;
-    margin-bottom: 30px;  
-}
-
-.omni{
-    position: relative;
-    max-height: 280px;
-    max-width: 190px;
-    
-}
-
-.regressor{
-    position: relative;
-    max-height: 280px;
-    max-width: 190px;
-}
 
 /*Main dudas*/
 
@@ -124,9 +147,9 @@ p{
 .staff div img{
     position: relative;
     display: inline-block;
-    max-height: 250px;
-    max-width: 160px;
-    border-radius: 100px ;
+    max-height: 60%;
+    max-width: 40%;
+    border-radius: 10rem ;
 }
 
 /*section dudas*/
@@ -140,10 +163,14 @@ p{
     margin-bottom: 30px;
 } 
 
+.mas-dudas div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .mas-dudas img{
-    position: relative;
-    max-height: 250px;
-    max-width: 160px;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 
@@ -157,11 +184,9 @@ p{
 }
 
 .registrar form fieldset{
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     background-color: white;
-    padding: 100px;
-    margin: 60px 30px 30px 60px;
 }
 
 .registrar form fieldset div{
@@ -170,28 +195,58 @@ p{
 }
 
 /*footer*/
-footer{
-    align-items: end;
-}
-.redes-sociales{
-    background-color: #16213E;
-    list-style: none;
-} 
+
+
 
 .derechos{
     color: #E94560;
 }
 
-.links-redes{
-    list-style: none;
-    display: inline-block;
-    margin: 10px;
+/*links css*/
+
+
+a:visited{
+    color: #E94560;
 }
 
-.logos-sociales{
-    position: relative;
-    align-content: right;
-    max-height: 30px;
-    max-width: 30px;
-    left: 1150px;
+@media (max-width:2000px) and (min-width:650px){
+    
+    .contenedor{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+        "header header header header header"
+        "main main main main anuncio-dos"
+        "anuncio-uno section section section section"
+        "footer footer footer footer footer";
+    }
+
+    .img-nosotros{
+        display: none;
+    }
+
+    .logo-granlector{  
+        display: flex;  
+    }
+    .logo-granlector img{  
+        max-width: 6vh;
+        max-height: 6vh;
+        
+    }
+
+
+    .anuncio-uno{
+        display: flex;
+        grid-area: anuncio-uno ;
+    }
+
+    .anuncio-dos{
+        display: flex;
+        grid-area: anuncio-dos ;
+    }
+
+    .anuncio-uno{
+        height: 50%;
+    }
 }

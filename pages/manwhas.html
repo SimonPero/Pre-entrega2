@@ -4,50 +4,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS BT-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!--link de css-->
     <link rel="stylesheet" href="../css/main.css">
+     <!--Link animations-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>Manwhas</title>
 </head>
 <body>
-    <!--Menu-->
-    <header>
-        <nav class="menu">
-        <ul>
-        <a href="../GranLector.html"><h1 class="marca">Gran Lector</h1></a>
-        <a href="manwhas.html" class="links-menu"><li>Manwhas</li></a>
-        <a href="audiolibros.html" class="links-menu"><li>AudioLibros</li></a>
-        <a href="dudas.html" class="links-menu"><li>Ayuda y Dudas</li></a>
-        <a href="regist.html" class="links-menu"><li>Registrarse</li></a>
-    </ul>
-    </nav>
-    </header>
+    <div class="contenedor">
+        <!--Menu-->
+        <header >
+          <nav class="navbar fondo-color sticky-top">
+              <div class="container-fluid">
+                  <h1 class="animate__animated animate__wobble"><a class="navbar-brand marca" href="../GranLector.html">GranLector</a></h1>
+                  <div class="logo-granlector">
+                      <img src="../img/GranLector.jpeg" alt="">
+                  </div> 
+                  <button class="navbar-toggler bg-secondary btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                      <div class="offcanvas-body bg-light">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                          <li class="nav-item">
+                              <a class="nav-link " aria-current="page" href="manwhas.html">Manwhas</a>
+                              </li>
+                          <li class="nav-item">
+                          <a class="nav-link " aria-current="page" href="audiolibros.html">AudioLibros</a>
+                          </li>
+                          <li class="nav-item">
+                          <a class="nav-link" href="dudas.html">Ayuda y Dudas</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="regist.html">Registrarse</a>
+                          </li>  
+                      </ul>
+                      <form class="d-flex" role="search">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                      </div>
+                  </div>
+              </div>
+          </nav>
+      </header>
 
-    <!--Contenido-->
-    <main class="manwha">
-        <div>
-            <img class="blue-lock" src="../img/blue-lock.png" alt="">
-        </div>
-        <p>Nombre: Blue Lock</p>
-        <p>Géneros: Acción Deporte</p>
-        
-        <div>
-        <img class="kaiju" src="../img/kaiju.jpg" alt="">
-        </div>
-        <p>Nombre: Kaiju N.8</p>
-        <p>Géneros: Action Comedy Horror Sci fi</p>
-    </main> 
+        <!--Contenido-->
+        <main class="manwha">
+            <div class="card text-bg-secondary mt-3 mb-3 caja-tamaño"  style="max-width: 90%;">
+                <div class="row g-0">
+                  <div class="col-4">
+                    <img src="../img/blue-lock.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-8 text-end">
+                    <div class="card-body">
+                      <h2 class="card-title">Nombre: Blue Lock</h2>
+                      <p class="card-text">Géneros: Acción Deporte</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="card text-bg-secondary mt-3 mb-3 caja-tamaño"  style="max-width: 90%;">
+                <div class="row g-0">
+                  <div class="col-4">
+                    <img src="../img/kaiju.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-8 text-end">
+                    <div class="card-body">
+                      <h2 class="card-title">Nombre: Kaiju N.8</h2>
+                      <p class="card-text">Géneros: Action Comedy Horror Sci fi</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+        </main>
+        <div class="anuncio-uno">
+            <img src="../img/pepsi-anuncion.jpeg" alt="">
+          </div>
+  
+          <div class="anuncio-dos">
+              <img src="../img/macdonal-anuncio.jpeg" alt="">
+          </div>
 
-    <!--Pie de pagina-->
+        <!--Pie de pagina-->
 
-    <footer>
-        <nav class="redes-sociales">
-            <ul>
-                <h4 class="derechos">Todos los derechos reservados</h4>
-                <a href="" class="links-redes"><li><img class="logos-sociales" src="../img/logo-insta.png" alt=""></li></a>
-                <a href="" class="links-redes"><li><img class="logos-sociales" src="../img/logo-face.png" alt=""></li></a>
-                <a href="" class="links-redes"><li><img class="logos-sociales" src="../img/discord.jpeg" alt=""></li></a>
-            </ul>
-        </nav>
-    </footer>
+        <footer>
+            <nav class="navbar fondo-color sticky-bottom">
+                <div class="container-fluid logos-sociales placeholder-sm">
+                    <h4 class="derechos">Todos los derechos reservados</h4>
+                    <a href=""><img src="../img/logo-insta.png" alt=""></a>
+                    <a href=""><img src="../img/logo-face.png" alt=""></a>
+                    <a href=""><img src="../img/discord.jpeg" alt=""></a>
+                </div>
+            </nav>
+        </footer>
+    </div>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
